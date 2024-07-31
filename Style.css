@@ -1,0 +1,755 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding:0%;
+    margin: 0%;
+    background-color: #efefef;
+}
+
+p {
+    background-color: transparent;
+    font-size: 16px;
+    text-align: justify;
+    padding: 0% 8% 0% 8%;
+}
+
+
+header,
+.header .nombre {
+    background-color: #004f9f;
+    padding: 80px;
+}
+
+#logo {
+    border-radius: 5px;
+    position: relative;
+    margin-top: -60px;
+    margin-left: -10px;
+    width: 210px;
+    height: 70px;
+    float: inline-start;
+    display: block;
+    background-color: transparent;
+}
+
+
+.navegacion {
+    position: relative;
+    color: white;
+    background-color: #004f9f;
+    list-style-type: none;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    top: -40px
+}
+
+.nav {
+    background-color: #004f9f;
+    margin-right: 35px;
+}
+
+.nav:hover {
+    color: orange;
+}
+
+#contenedor {
+    position: relative;
+    top: -62px;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+
+}
+
+#img-fondo {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    position: static;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -550px;
+    margin: 0%;
+    left: center;
+    background-color: transparent;
+    font-size: 50px;
+    color: white;
+}
+
+.button-obtener {
+    position: absolute;
+    margin-left: 42%;
+    bottom: 23%;
+    background-color: #009fe3;
+    padding: 1.5%;
+    border-radius: 6px;
+    cursor:pointer;
+    transition: border-color 1s, border-width 1s;
+}
+.button-obtener:hover {
+    border: 2px white solid;
+}
+
+.button-servers {
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: white;
+}
+
+hr {
+    background-color: #f7a600;
+    padding: 20px;
+    margin-top: -223px;
+    margin-bottom: 12px;
+    border: transparent;
+    margin-right: 50%;
+}
+
+#fondo {
+    padding: 5rem;
+    background-color: #94949459;
+}
+
+.lema {
+    transition: color 2s, transform 2s;
+    animation: aparecer 8s 3s alternate-reverse infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        transform: scale(1);
+        color: #f7a600;
+    }
+    25%{
+        transform: scale(1.1);
+        color: #f7a600;
+    }
+}
+
+.caja-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+.tarjeta {
+    box-shadow: 2px 1px 1px 1px rgba(32, 32, 32, 0.3);
+    text-align: center;
+    display: inline-block;
+    margin-top: 2.5%;
+    margin-right: 5px;
+    margin-left: 60px;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    border-radius: 5px;
+    border: 4px solid #efefef
+}
+
+
+.tarjeta .front,
+.tarjeta .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1.5s;
+}
+
+.tarjeta .front {
+    background-color: #3c75a7ad;
+    color: white;
+    transform: rotateY(0deg);
+}
+
+.tarjeta .back {
+    background-color: #3c75a7ad;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.tarjeta:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .back {
+    transform: rotateY(0deg);
+}
+
+.tarjeta img {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 65%;
+}
+
+h5 {
+    background-color: transparent;
+    margin: 0%;
+    font-size: 15px;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-obtener,
+.tarjeta-mas_informacion {
+    position: absolute;
+    margin-top: 80%;
+    padding: 10px;
+    border-radius: 0.5px;
+    border-color: black;
+    cursor: pointer;
+}
+
+
+.tarjeta-obtener {
+    /*BOTONES*/
+    margin-left: 55%;
+    background-color: #f7a500d7;
+}
+
+
+
+.tarjeta-mas_informacion {
+    /*BOTONES*/
+    margin-right: 35%;
+    background-color: #f7a500d7;
+}
+
+.hr-2 {
+    margin-top: 18px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.mas_servicios {
+    background-color: #009fe3;
+    border-radius: 6px;
+    cursor:pointer;
+    padding: 20px;
+    margin-top: 5%;
+    color: white;
+    transition: border-color 1s;
+    border-color: transparent;
+}
+
+.mas_servicios_a {
+    display: flex;
+    justify-content: center;
+    left: -50%;
+    transform: translate(420%);
+}
+
+.mas_servicios:hover {
+    border: 2px solid white ;
+    transform: scale(1.1);
+}
+
+.caja-tarjetas {
+    position: relative;
+    width: 75em;
+    background-color: transparent;
+    margin-left: 2%;
+}
+/* carrusel de reseñas ----> */
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0px);
+    margin: 2%;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 160px;
+    height: 230px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.stars {
+    font-size: 1.2em;
+    color: #ffcc00;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* cierrre de carrusel  */
+
+
+
+.background-2 {
+    position: relative;
+    display: flex;
+    margin: 0%;
+    width: 100%;
+    height: 1100px;
+    background-color: #004f9e;
+}
+
+.box {
+    background-image: url(GESTIONEMPRESARIAL.PNG);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 30px 0px 30px 140px;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    transition: color 1s, transform 2s;
+}
+
+.company:hover {
+    transform: scale(1.05);
+    color: #f7a600;
+}
+
+.contenedor {
+    display: flex;
+    background-color: transparent;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 20%;
+    color: white;
+}
+
+.derecha {
+    background-color: #019fe381;
+    margin: 0% 0% 0% 12%;
+    border-radius: 10%;
+    width: 40%;
+    height: 90%;
+    justify-content: center;
+    font-size: 18px;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+
+.derecha:hover {
+    transform: scale(1.05);
+    background-color: #009fe3;
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+.izquierda {
+    height: 70%; /* Reduzco la altura al 50% del contenedor */
+    width: 20%; /* Reduzco el ancho al 20% del contenedor */
+    margin: 2% 0% 0% 18%; /* Aumento el margen izquierdo al 20% */
+    border-radius: 50%;
+    background-image: url(log_sinfondo.png);
+    background-size: cover; /* Ajusto el tamaño de la imagen de fondo */
+    background-position: center;
+    background-color: transparent(80%);
+    transition: transform 1s;
+}
+
+.izquierda:hover {
+    transform: scale(1.05);
+}
+
+#box_mayor {
+    margin: -5% 0% -2% 12%;
+    width: 78%;
+    height: 20%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box_mayor {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos horizontalmente */
+    justify-content: space-between; /* Espacia uniformemente los elementos hijos */
+    gap: 20px; /* Espacio entre las cajas */
+    padding: 20px; /* Espacio interno alrededor del contenedor */
+}
+
+.mision, .vision {
+    flex-grow: 1;
+    flex-basis: 200;
+    flex: 1; /* Las cajas ocupan el mismo espacio disponible */
+    padding: 20px; /* Espacio interno alrededor del contenido de cada caja */
+    border: 2px solid #000; /* Borde de las cajas */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #019fe381; /* Color de fondo de las cajas */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    min-height: 200px; /* Altura mínima de las cajas */
+    color: white;
+    transition: transform 1s;
+}
+
+.mision:hover, .vision:hover {
+    transform: scale(1.03);
+    background-color: #019ee3;
+}
+.mision textarea, .vision textarea {
+    width: 100%; /* El textarea ocupa el 100% del ancho de la caja */
+    height: 100%; /* El textarea ocupa el 100% de la altura de la caja */
+    border: none; /* Sin borde */
+    resize: none; /* No permite redimensionar el textarea */
+    padding: 10px; /* Espacio interno del textarea */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Mantiene la misma fuente que el contenedor */
+    font-size: 2em; /* Mantiene el tamaño de fuente estándar */
+}
+
+
+p {
+    padding: 2.1%;
+}
+
+.izquierda1 {
+    height: 70%; /* Reduzco la altura al 50% del contenedor */
+    width: 20%; /* Reduzco el ancho al 20% del contenedor */
+    margin: 2% 0% 0% 18%; /* Aumento el margen izquierdo al 20% */
+    border-radius: 50%;
+    background-image: url(ventajas_ia.png);
+    background-size: cover; /* Ajusto el tamaño de la imagen de fondo */
+    background-position: center;
+    background-color: transparent;
+    transition: transform 1s;
+}
+
+.izquierda1:hover {
+    transform: scale(1.1);
+}
+h2 {
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#fondo-2 {
+    background-color: #004f9f;
+    height: 410px;
+    width: 100%;
+}
+
+.box-opinion {
+    width: 16em;
+    height: 3em;
+    background-color: #019ee5;
+    border-radius: 0% 0% 20% 0%;
+    border: 2px solid #ffff;
+    display: flex;
+    justify-content: center;
+    margin: 0% 0% 0% 40%;
+    transition: transform 0.5s  ease;
+}
+
+.box-opinion:hover {
+    transform: scale(1.2);
+}
+
+.opinion {
+    background-color:#019ee5;
+    width: 100%;
+    height: 100%;
+    border: #ffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+}
+
+.opinion:hover {
+    cursor: pointer;
+}
+
+a {
+    background-color: transparent;
+}
+
+
+.box-iconos {
+    background-color: transparent;
+    display: flex;
+    flex-direction: space;
+    font-size: 30px;
+    padding: 5%;
+}
+
+.icon {
+    padding: 3%;
+    margin-right: 8%;
+    margin-left: 10%;
+    background-color: #efefef;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.icon-whatsapp:hover {
+    background-color: rgba(95, 255, 47, 0.772);
+    transition: background-color 3s;
+}
+
+.icon-mail4:hover {
+    background-color: rgba(255, 0, 0, 0.61);
+    transition: background-color 3s;
+}
+
+.icon-home3:hover { 
+    background-color: rgba(255, 166, 0, 0.674);
+    transition: background-color 3s;
+}
+
+.icon-phone:hover {
+    background-color: rgba(43, 74, 255, 0.689);
+    transition: background-color 3s;
+}
+
+.intro {
+    margin: -20px 10% 0% 15%;
+    text-align: justify;
+    background-color: transparent;
+    color: white;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    background-color: #004f9f;
+    color: white;
+}
+
+.in-logo {
+    border-radius: 5px;
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 70px;
+    height: 70px;
+    float: inline-start;
+    background-color: transparent;
+}
+
+.a-off {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    right: 2%;
+}
+
+strong {
+    background-color: transparent;
+}
+
+/* Resoluciones cll*/
+@media (max-width:1040px) { 
+    /*header*/
+    .navegacion{
+        font-size: 12px;
+    }
+    .barra-nav {
+        margin-right: -32%;
+        margin-top: 52px;
+    }
+
+    #logo{
+        margin-top: -70px;
+        margin-left: 5%;
+    }
+
+    #img-fondo {
+        height: 90%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .button-obtener{
+        margin-bottom:35%;
+        margin-left: 30%;
+        width: 40%;
+        height: 4%;
+    }
+
+    .lema {
+        font-size: 30px;
+    }
+
+
+    /*tarjetas */
+
+    #fondo {
+        height: 115em;
+    }
+
+    .caja-tarjetas {
+        margin-top: -20%;
+        margin-left: -30%;
+        width: auto;
+    }
+    
+    .tarjeta {
+        width: 10em;
+        height: 18em;
+    }
+
+    .tarjeta-obtener, .tarjeta-mas_informacion {
+        width: 10em;
+        height: 4em;
+        font-size: 9px;
+        margin-top: 25em;
+    }
+    .mas_servicios {
+        margin-left: -700%;
+        margin-top: 30%;
+    }
+    /*-------*/
+    /*carousel*/
+
+    .carousel {
+        margin-bottom: 10%;
+    }
+    
+    .card {
+        width: 10em;
+        height: 13em;
+        font-size: 25px;
+    }
+
+    /*--------*/
+    /*Quienes somos*/
+    .background-2{
+        height: 80em;
+    }
+    .box {
+        margin: 0% ;
+        width: 100%;
+        margin-top: 5%;
+    }
+    .company {
+        font-size: 20px
+    }
+    .contenedor{
+        height: 15em;
+    }
+
+    #izquierda2{
+        height: 5em;
+        width: 18em;
+        margin-left: 5%;
+    }
+
+    #derecha1 {
+        margin: 0% 10% 0% 8%;
+        width: 60em;
+        height: 12em;
+    }
+
+    .mision {
+        margin-left: -15%;
+        margin-top: -8%;
+    }
+
+    .vision {
+        margin-top: -8%;
+    }
+
+    #box-pros {
+        margin-top: 60%;
+    }
+    
+    .izquierda1 {
+        width: 8em;
+        height: 5em;
+        margin-left: -2%;
+    }
+
+    .derecha {
+        margin-left: -0.5%;
+        width: 14em;
+        height: 15em;
+    }
+
+    .box-opinion{
+        margin-top: 20%;
+        margin-left: 18%;
+    }
+    /*-------*/
+    /*ICONOS*/
+    .box-iconos{
+        margin-left: -8%;
+    } 
+    .icon{
+       margin-right: 2%;
+    }
+    /*------*/
+
+    .intro {
+        margin: 0%;
+        height: 12em;
+    }
+
+    .in-logo {
+        margin: -5% 0% 0% 0%;
+        padding: 5%;
+        border-radius: 5%;
+    }
+   
+}

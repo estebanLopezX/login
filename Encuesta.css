@@ -1,0 +1,275 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding:0%;
+    margin: 0%;
+    background-color: #efefef;
+}
+
+p {
+    background-color: transparent;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+header,
+.header .nombre {
+    background-color: #004f9f;
+    padding: 55px;
+}
+
+#logo {
+    border-radius: 5px;
+    position: relative;
+    margin-top: -40px;
+    width: 210px;
+    height: 70px;
+    float: inline-start;
+    display: block;
+    background-color: transparent;
+}
+
+
+.navegacion {
+    right: 25%;
+    position: relative;
+    color: white;
+    background-color: #004f9f;
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    top: -10px
+}
+
+.nav {
+    background-color: #004f9f;
+    margin-left: 10px;
+}
+
+.nav:hover {
+    color: orange;
+}
+
+.barra-nav {
+    background-color: transparent;
+    margin-left: 60%;
+    margin-top: -6%;
+    margin-bottom: 1.2%;
+}
+
+
+.a-off {
+    text-decoration: none;
+    color:inherit;
+    background-color: transparent;
+    margin-right: 8%;
+}
+
+#fondo-3{
+    width: 100%;
+    height: 80em;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+}
+
+.box-imput{
+    margin-top: 2%;
+    width: 75%;
+    border: 0px solid ;
+    box-shadow: 
+    0 1px 0 #fff, 
+    0 -1px 0 #fff,
+    1px 0 0 #fff, 
+    -1px 0 0 #fff, 
+    0 0 10px rgba(0, 0, 0, 0.471);
+}
+
+
+h3 {
+    margin: 2% 4%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.hr-3 {
+    margin-right: 50%;
+    border: 1px solid #f7a600;
+    background-color: #f7a600;
+    height: 1em;
+}
+
+
+
+.hr-2 {
+    background-color: #f7a600;
+    padding: 20px;
+    margin-top: -223px;
+    margin-bottom: 12px;
+    border: transparent;
+    margin-right: 50%;
+    margin-top: 18px;
+}
+
+label {
+    margin: 2%;
+
+}
+
+.p-text {
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.checkbox {
+    margin-left: 2%;
+} 
+
+input{
+    height: 1.5em;
+    box-shadow: 
+    0 1px 0 #fff, 
+    0 -1px 0 #fff,
+    1px 0 0 #fff, 
+    -1px 0 0 #fff, 
+    0 0 10px rgba(0, 0, 0, 0.471);
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+textarea {
+    width: 25em;
+    height: 13em;
+}
+
+button {
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 6em;
+    height: 2em;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 255, 21, 0.48);
+}
+
+#fondo-2 {
+    background-color: #004f9f;
+    height: 410px;
+    width: 100%;
+}
+
+.box-iconos {
+    background-color: transparent;
+    display: flex;
+    flex-direction: space;
+    font-size: 30px;
+    padding: 5%;
+
+}
+
+.icon {
+    padding: 3%;
+    margin-right: 8%;
+    margin-left: 10%;
+    background-color: #efefef;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.icon-whatsapp:hover {
+    background-color: rgba(95, 255, 47, 0.772);
+    transition: background-color 3s;
+}
+
+.icon-mail4:hover {
+    background-color: rgba(255, 0, 0, 0.61);
+    transition: background-color 3s;
+}
+
+.icon-home3:hover { 
+    background-color: rgba(255, 166, 0, 0.674);
+    transition: background-color 3s;
+}
+
+.icon-phone:hover {
+    background-color: rgba(43, 74, 255, 0.689);
+    transition: background-color 3s;
+}
+
+.intro {
+    margin: 0% 10% 0% 15%;
+    text-align: justify;
+    background-color: transparent;
+    color: white
+}
+
+.in-logo {
+    border-radius: 5px;
+    position: relative;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    float: inline-start;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    background-color: transparent;
+    background-color: #004f9f;
+    color: white;
+}
+
+/* Resoluciones cll*/
+@media (max-width:1040px) { 
+    /*header*/
+    .navegacion{
+        font-size: 12px;
+    }
+    .barra-nav {
+        margin-left: -40%;
+        margin-top: 52px;
+    }
+
+    #logo{
+        margin-top: -45px;
+        margin-left: 10%;
+    }
+    /*ICONOS*/
+    .box-iconos{
+        margin-left: -8%;
+    } 
+    .icon{
+       margin-right: 2%;
+    }
+    /*------*/
+
+    .intro {
+        margin: 0%;
+        height: 12em;
+    }
+
+    .in-logo {
+        margin: -5% 0% 0% 0%;
+        padding: 5%;
+        border-radius: 5%;
+        background-color: #004f9f;
+    }
+
+}

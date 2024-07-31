@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G. Documental S.A.S</title>
+    <link rel="icon" href="logo_sin_sombra.png">
+    <link rel="stylesheet" href="Encuesta.css">
+    <link rel="stylesheet" type="text/css" href="Iconos.css">
+</head>
+
+<body>
+    <header class="headKFer">
+        <a href="index.html"><img src="logo Soluciones Horizontal BLANCO.png" id="logo"></a>
+        <nav class="barra-nav">
+            <ul class="navegacion">
+                <a href="index.html" class="a-off">
+                    <li class="nav">INICIO</li>
+                </a>
+                <a href="SERVICIOS.html" class="a-off">
+                    <li class="nav">SERVICIOS</li>
+                </a>
+                <a href="index.html" class="a-off">
+                    <li class="nav">ACERCA DE</li>
+                </a>
+                <a href="#contacto" class="a-off">
+                    <li class="nav">CONTACTO</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <section id="fondo-3">
+        <article class="box-imput">
+            <h3>¡AYUDANOS A CRECER COMO EMPRESA!</h3>
+            <hr class="hr-3">
+            <form action="Encuesta.php" method="post">
+
+                <label for="Empresa" class="Empresa">
+                    <p class="p-text">Nombre de la Empresa:</p>
+                </label>
+                <input type="text" id="Empresa" name="empresa" maxlength="30" class="Empresa" placeholder="Nombre Empresa"><br>
+
+                <label for="Correo">
+                    <p class="p-text">Correo electrónico:</p>
+                </label>
+                <input type="email" id="Correo" name="correo" class="email" placeholder="Correo"><br>
+
+                <label for="pregunta1">
+                    <p class="p-text">¿Has utilizado servicios de Gestión Documental S.A.S en el pasado?</p>
+                </label>
+                <input type="checkbox" id="pregunta1_sí" name="check">Sí<br>
+                <input type="checkbox" id="pregunta1_no" name="check" class="checkbox">No<br>
+
+                <label for="Aspecto">
+                    <p class="p-text">¿Que otros servicios te gustaria ver en nuestra empresa?</p>
+                </label>
+                <input type="text" id="Aspecto" name="text" class="text" placeholder="Servicios"><br>
+
+                <label for="clasificacion">
+                    <p class="p-text">¿Cómo calificarías la calidad de los servicios que recibiste?<br>(Escala del
+                        1 al 10, siendo 1 muy insatisfactorio y 10 excelente)</p>
+                </label>
+                <input type="number" id="clasificacion" name="clasificacion" nim="1" max="10"><br>
+
+                <label for="pregunta2">
+                    <p class="p-text">¿Consideras que nuestros servicios han mejorado la eficiencia en la gestión de
+                        tus documentos?</p>
+                </label>
+                <input type="checkbox" id="pregunta2_si" name="eficiencia">Sí<br>
+                <input type="checkbox" id="preguntra2_no" class="checkbox" name="eficiencia">No<br>
+                <input type="checkbox" id="pregunta2_no_estoy_seguro" class="checkbox" name="eficiencia">No estoy seguro<br>
+
+                <label for="pregunta3">
+                    <p class="p-text">¿Recomendarías nuestros servicios a otras organizaciones o personas?</p>
+                </label>
+                <input type="checkbox" id="pregunta3_si" name="recomendacion"> Sí<br>
+                <input type="checkbox" id="pregunta3_no" name="recomendacion" class="checkbox">No<br>
+                <input type="checkbox" id="pregunta3_tal_vez" name="recomendacion" class="checkbox">Tal vez<br>
+
+                <label for="recomendaciones">
+                    <p class="p-text">Por favor, siéntete libre de proporcionar cualquier comentario adicional
+                        que creas relevante para mejorar nuestros servicios.</p>
+                    </lable>
+                    <textarea type="text" id="recomendaciones" name="recomendaciones" maxlength="500"
+                        class="checkbox"></textarea><br>
+
+                    <button type="submit" value="Enviar">Enviar</button>
+            </form>
+        </article>
+    </section>
+    <hr class="hr-2">
+    <footer id="contacto">
+        <section id="fondo-2">
+            <div class="box-iconos">
+                <a class="icon icon-home3" href="index.html"><span></span></a>
+                <a class="icon icon-phone" href="tel:+573104858504"><span></span></a>
+                <a class="icon icon-mail4" href="mailto:S.ddocumentalsas@gmail.com"><span></span></a>
+                <a class="icon icon-whatsapp" href="https://wa.me/+573104858504"><span></span></a>
+            </div>
+            <div class="intro">
+                <img src="logo_sin_sombra.png" class="in-logo">
+                <p class="intro">En Soluciones y Distribuciones Gestión Documental S.A.S, nos enorgullecemos de ser
+                    líderes en el campo de la gestión documental,
+                    ofreciendo soluciones integrales que transforman la manera en que las organizaciones manejan y
+                    protegen su información vital. Nuestro compromiso es brindar servicios de alta calidad que optimicen
+                    la eficiencia, la seguridad y la accesibilidad de tus documentos.</p>
+            </div>
+            <div class="box-p">
+                <p class="copy">© COPHYRIGHT 2024.</p>
+            </div>
+        </section>
+    </footer>
+</body>

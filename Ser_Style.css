@@ -1,0 +1,343 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding:0%;
+    margin: 0%;
+    background-color: #efefef;
+}
+
+p {
+    background-color: transparent;
+    font-size: 16px;
+    text-align: justify;
+    padding: 0% 8% 0% 8%;
+}
+
+
+header,
+.header .nombre {
+    background-color: #004f9f;
+    padding: 55px;
+}
+
+#logo {
+    border-radius: 5px;
+    position: relative;
+    margin-top: -40px;
+    width: 210px;
+    height: 70px;
+    float: inline-start;
+    display: block;
+    background-color: transparent;
+}
+
+
+.navegacion {
+    right: 1%;
+    position: relative;
+    color: white;
+    background-color: #004f9f;
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    top: -10px
+}
+
+.nav {
+    background-color: #004f9f;
+    margin-left: 5px;
+}
+
+.nav:hover {
+    color: orange;
+}
+
+#fondo {
+    padding: 6rem;
+    background-color: #94949459;
+}
+
+.a-off {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 2%;
+}
+
+.caja-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+.tarjeta {
+    box-shadow: 2px 1px 1px 1px rgba(32, 32, 32, 0.3);
+    text-align: center;
+    display: inline-block;
+    margin-top: 2.5%;
+    margin-right: 5px;
+    margin-left: 60px;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    border-radius: 5px;
+    border: 4px solid #efefef;
+}
+
+
+.tarjeta .front,
+.tarjeta .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 1.5s;
+}
+
+.tarjeta .front {
+    background-color: #3c75a7ad;
+    color: white;
+    transform: rotateY(0deg);
+}
+
+.tarjeta .back {
+    background-color: #3c75a7ad;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.tarjeta:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .back {
+    transform: rotateY(0deg);
+}
+
+.tarjeta img {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 65%;
+}
+
+h4 {
+    background-color: transparent;
+    margin: 0%;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta-obtener{
+    position: absolute;
+    padding: 10px;
+    margin-top: 80%;
+    border-radius: 0.5px;
+    border-color: black;
+    cursor: pointer;
+    background-color: #009fe3;
+}
+
+a{
+    background-color: #f7a500d7;
+}
+
+.tarjeta-obtener {
+    /*BOTONES*/
+    background-color: #f7a500d7;
+}
+
+hr {
+    background-color:#f7a600;
+    padding: 20px;
+    margin-top: -223px;
+    margin-bottom: 12px;
+    border: transparent;
+    margin-right: 50%;
+}
+
+.hr-2 {
+    margin-top: 18px;
+}
+
+#fondo-2 {
+    background-color: #004f9f;
+    height: 410px;
+    width: 100%;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.mas_servicios:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-mas_servers {
+    padding: 10px;
+    margin: 30px 500px;
+    border-radius: 20px;
+    background-color: rgba(123, 168, 236, 0.395);
+}
+
+.caja-tarjetas {
+    position: relative;
+    width: 75em;
+    height: 100em;
+    background-color: transparent;
+}
+
+.IMG-tarjetas {
+    filter: brightness(60%);
+}
+
+.a-off {
+    text-decoration: none;
+    color:inherit;
+    background-color: transparent;
+    margin-right: 8%;
+}
+
+
+
+.copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #004f9f;
+    color: white;
+}
+
+
+.box-iconos {
+    background-color: transparent;
+    display: flex;
+    flex-direction: space;
+    font-size: 30px;
+    padding: 5%;
+
+}
+
+.icon {
+    padding: 3%;
+    margin-right: 8%;
+    margin-left: 10%;
+    background-color: #efefef;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.icon-whatsapp:hover {
+    background-color: rgba(95, 255, 47, 0.772);
+    transition: background-color 3s;
+}
+
+.icon-mail4:hover {
+    background-color: rgba(255, 0, 0, 0.61);
+    transition: background-color 3s;
+}
+
+.icon-home3:hover { 
+    background-color: rgba(255, 166, 0, 0.674);
+    transition: background-color 3s;
+}
+
+.icon-phone:hover {
+    background-color: rgba(43, 74, 255, 0.689);
+    transition: background-color 3s;
+}
+
+.intro {
+    margin: 0% 10% 0% 15%;
+    text-align: justify;
+    background-color: transparent;
+    color: white
+}
+
+.in-logo {
+    border-radius: 5px;
+    position: relative;
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    float: inline-start;
+}
+
+/* Resoluciones cll*/
+@media (max-width:1040px) { 
+    /*header*/
+    #logo {
+        margin-left: 10%;
+    }
+
+    .navegacion{
+        font-size: 15px;
+    }
+    .barra-nav {
+        margin-left: -180%;
+        margin-top: 52px;
+    }
+
+    /*servicios*/
+
+    #fondo{
+        height: 100em;
+    }
+    .caja-tarjetas {
+        margin-left: -50%;
+        padding: 0%;
+        width: 195%;
+    }
+
+    .tarjeta {
+        width: 8em;
+        height: 15em;
+        margin: 0%;
+    }
+
+    /*ICONOS*/
+    .box-iconos{
+        margin-left: -8%;
+    } 
+    .icon{
+       margin-right: 2%;
+    }
+    /*------*/
+
+    .intro {
+        margin: 0%;
+        height: 12em;
+    }
+
+    .in-logo {
+        margin: -5% 0% 0% 0%;
+        padding: 5%;
+        background-color: #004f9f;
+    }
+}
+
